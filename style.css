@@ -454,3 +454,35 @@
                 opacity: 1;
             }
         }
+   
+/* Alinhamento consistente de títulos no mobile */
+@media (max-width: 768px) {
+    h1, h2, h3 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-title,
+    .media-card h3 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-links-desktop {
+        display: none;
+    }
+
+    .navbar-toggle-container {
+        display: block;
+    }
+}
+.mobile-menu {
+    z-index: 999;
+}
