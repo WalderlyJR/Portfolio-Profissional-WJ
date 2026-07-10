@@ -15,22 +15,40 @@
 
 <body>
 
-  <header class="navbar">
-    <div class="navbar-container">
-      <a href="#" class="logo">Walderly JR</a>
+<header class="navbar">
+  <div class="navbar-container">
+    <a href="#" class="logo">Walderly JR</a>
 
-      <nav class="nav-links">
-        <a href="#services">Serviços</a>
-        <a href="#projects">Projetos</a>
-        <a href="#about">Sobre</a>
-        <a href="#contact">Contato</a>
-      </nav>
-<a href="https://wa.me/5571981814555?text=Olá,%20quero%20um%20orçamento%20para%20um%20projeto"
-         class="nav-button" target="_blank">
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links" id="mobile-menu">
+      <a href="#services">Serviços</a>
+      <a href="#projects">Projetos</a>
+      <a href="#about">Sobre</a>
+      <a href="#contact">Contato</a>
+
+      <a
+        href="https://wa.me/5571981814555?text=Olá,%20quero%20um%20orçamento%20para%20um%20projeto"
+        class="mobile-budget-button"
+       
+      >
         Orçamento
       </a>
-    </div>
-  </header>
+    </nav>
+
+    <a
+      href="https://wa.me/5571981814555?text=Olá,%20quero%20um%20orçamento%20para%20um%20projeto"
+      class="nav-button"
+      
+    >
+      Orçamento
+    </a>
+  </div>
+</header>
 
   <section class="hero">
     <div class="hero-container">
@@ -47,7 +65,7 @@
 
         <div class="hero-buttons">
           <a href="https://wa.me/5571981814555?text=Olá,%20quero%20um%20orçamento%20para%20um%20projeto"
-             class="btn btn-primary" target="_blank">
+             class="btn btn-primary" >
             <i class="fa-brands fa-whatsapp"></i>
             Solicitar orçamento
           </a>
@@ -155,8 +173,41 @@
         sistemas e aplicações web.
       </p>
     </div>
+<div class="projects-grid">
 
-    <div class="projects-grid">
+      <div class="project-card">
+        <img src="img/power-bi-selection-pane.png" alt="Dashboard em Power BI" />
+        <div class="project-content">
+          <h3>Dashboard em Power BI</h3>
+          <p>
+            Painel gerencial para acompanhamento de indicadores,
+            análise de dados e apoio à tomada de decisão.
+          </p>
+          <div class="tags">
+            <span>Power BI</span>
+            <span>Dados</span>
+            <span>Indicadores</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="img/telas-whatsapp-05.webp" alt="Automação de processos" />
+        <div class="project-content">
+          <h3>Automação de Processos chatbot </h3>
+          <p>
+            Solução para reduzir tarefas repetitivas, organizar informações
+            e melhorar a produtividade operacional.
+          </p>
+          <div class="tags">
+            <span>RPA</span>
+            <span>Python</span>
+            <span>Node.js</span>
+            <span>IA</span>
+          </div>
+        </div>
+      </div>
+   
       <div class="project-card">
         <img src="img/souza.png" alt="Loja de eletrônicos" />
         <div class="project-content">
@@ -240,6 +291,7 @@
           </div>
         </div>
       </div>
+      
 
       <div class="project-card">
         <img src="img/telawaldy.png" alt="Landing page para lançamento de livro" />
@@ -257,6 +309,7 @@
           </div>
         </div>
       </div>
+      
     </div>
   </section>
 
@@ -362,7 +415,7 @@
 
       <div class="contact-buttons">
        <a href="https://wa.me/5571981814555?text=Olá,%20quero%20um%20orçamento%20para%20um%20projeto"
-           class="btn btn-primary" target="_blank">
+           class="btn btn-primary" >
           <i class="fa-brands fa-whatsapp"></i>
           Chamar no WhatsApp
         </a>
@@ -372,12 +425,12 @@
           Enviar e-mail
         </a>
 
-        <a href="https://github.com/WalderlyJR" class="btn btn-secondary" target="_blank">
+        <a href="https://github.com/WalderlyJR" class="btn btn-secondary" >
           <i class="fa-brands fa-github"></i>
           GitHub
         </a>
 
-        <a href="https://www.linkedin.com/in/walderly-junior-023547248" class="btn btn-secondary" target="_blank">
+        <a href="https://www.linkedin.com/in/walderly-junior-023547248" class="btn btn-secondary" >
           <i class="fa-brands fa-linkedin"></i>
           LinkedIn
         </a>
@@ -388,6 +441,6 @@
   <footer class="footer">
     <p>&copy; Walderly Junior. Todos os direitos reservados.</p>
   </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

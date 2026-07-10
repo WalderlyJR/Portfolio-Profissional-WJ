@@ -1,27 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const menuButton = document.getElementById('menu-button');
-    const closeMenuButton = document.getElementById('close-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("JS carregou");
 
-    if (!menuButton || !closeMenuButton || !mobileMenu) {
-        console.error('Elementos do menu não encontrados');
-        return;
-    }
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
 
-    function openMenu() {
-        mobileMenu.classList.remove('hidden-menu');
-        mobileMenu.classList.add('show-menu');
-    }
+  console.log(menuToggle);
+  console.log(mobileMenu);
 
-    function closeMenu() {
-        mobileMenu.classList.remove('show-menu');
-        mobileMenu.classList.add('hidden-menu');
-    }
+  if (!menuToggle || !mobileMenu) {
+    console.error("Elementos do menu não encontrados");
+    return;
+  }
 
-    menuButton.addEventListener('click', openMenu);
-    closeMenuButton.addEventListener('click', closeMenu);
+  menuToggle.addEventListener("click", () => {
+    console.log("Clicou no menu");
 
-    document.querySelectorAll('.mobile-nav-links a').forEach(link => {
-        link.addEventListener('click', closeMenu);
-    });
+    mobileMenu.classList.toggle("active");
+    menuToggle.classList.toggle("active");
+  });
 });
